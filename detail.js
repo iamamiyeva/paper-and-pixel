@@ -7,7 +7,7 @@ async function fetchData() {
         console.error("Couldn't find the ID of the book!");
         return;
     }
-    const url = `http://127.0.0.1:5000/api/books/${bookID}`
+    const url = `https://paper-and-pixel-1.onrender.com/api/books/${bookID}`
 
     try{
         const response = await fetch(url);
@@ -52,7 +52,7 @@ function renderBook() {
 fetchData();
 
 async function fetchBooksByCategory(categoryId) {
-    const url = "http://127.0.0.1:5000/api/books";
+    const url = "https://paper-and-pixel-1.onrender.com/api/books/";
     
     if (categoryId) {
         url += `?category_id=${categoryId}`

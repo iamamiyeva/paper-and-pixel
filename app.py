@@ -12,7 +12,7 @@ def get_db_connection():
 
 @app.route('/', methods=['GET'])
 def home():
-    return jsonify({"message": "Paper and Pixel API is running successfully!"})
+    return app.send_static_file('index.html')
 
 ##  FOR ALL BOOKS AND FILTERS ON HOME PAGE (JUST THEIR CARDS' DETAILS)
 
