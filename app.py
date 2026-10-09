@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS 
 import sqlite3
 
@@ -13,6 +13,10 @@ def get_db_connection():
 @app.route('/', methods=['GET'])
 def home():
     return app.send_static_file('index.html')
+
+@app.route('/<path:path>')
+def serve_static(path):
+    return send_from_directory('.', path)
 
 ##  FOR ALL BOOKS AND FILTERS ON HOME PAGE (JUST THEIR CARDS' DETAILS)
 
