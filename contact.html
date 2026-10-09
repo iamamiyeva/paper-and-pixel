@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BOOKWEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Sol üst geri dönüş butonu */
+        .top-navigation {
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #2C2C2F;
+            color: #ffffff;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .back-home-btn:hover {
+            background-color: #E5A93C;
+            color: #2C2C2F;
+            transform: translateY(-2px);
+        }
+
+        /* Konteyner ve Düzen */
+        .contact-container {
+            max-width: 900px;
+            margin: 10px auto 50px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #E8E0D8;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .contact-header h1 {
+            font-size: 2.2rem;
+            color: #2C2C2F;
+            margin-bottom: 10px;
+        }
+
+        .contact-header p {
+            font-size: 1rem;
+            color: #666666;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 35px;
+        }
+
+        /* İletişim Bilgileri Kartları */
+        .info-card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 18px;
+            background-color: #F8F5EC;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #E8E0D8;
+        }
+
+        .info-card .material-icons {
+            font-size: 1.8rem;
+            color: #E5A93C;
+        }
+
+        .info-card h4 {
+            margin: 0 0 4px 0;
+            color: #2C2C2F;
+            font-size: 0.95rem;
+        }
+
+        .info-card p {
+            margin: 0;
+            color: #555555;
+            font-size: 0.9rem;
+        }
+
+        /* Form Stilleri */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-group label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #2C2C2F;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #CCCCCC;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #E5A93C;
+        }
+
+        .submit-btn {
+            background-color: #2C2C2F;
+            color: #ffffff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .submit-btn:hover {
+            background-color: #E5A93C;
+            color: #2C2C2F;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- return back button -->
+    <div class="top-navigation">
+        <a href="index.html" class="back-home-btn">
+            <span class="material-icons">arrow_back</span> Back to Home
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <main style="margin-left: 0; padding-top: 0;">
+        <div class="contact-container">
+            
+            <div class="contact-header">
+                <h1>Get in Touch</h1>
+                <p>Have questions, book suggestions, or project inquiries? Feel free to reach out!</p>
+            </div>
+
+            <div class="contact-grid">
+                
+                <!-- contact infos -->
+                <div>
+                    <div class="info-card">
+                        <span class="material-icons">email</span>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p>paper1Pixel@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="material-icons">location_on</span>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Bucharest, ROMANIA</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="material-icons">code</span>
+                        <div>
+                            <h4>Developer Portfolio</h4>
+                            <p>github.com/iamamiyeva</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- sending message -->
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

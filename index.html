@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKWEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" style="text-decoration:none; color:inherit; font-weight:bold; font-size:1.4rem;">
+                Paper & Pixel
+            </a>
+        </div>
+        <ul>
+            <li><span class="material-icons">menu</span></li>
+            <li><input type="text" placeholder="Search" class="book-search"></li>
+            <li><a href="">+ Add book</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <aside class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#" class="active" onclick="fetchBooksByCategory('')">All Books</a></li>
+            <li><a href="#" onclick="fetchBooksByCategory(1)">Classics</a></li>
+            <li><a href="#" onclick="fetchBooksByCategory(2)">Science Fiction</a></li>
+            <li><a href="#" onclick="fetchBooksByCategory(3)">Fantasy</a></li>
+            <li><a href="#" onclick="fetchBooksByCategory(4)">Philosophy</a></li>
+            <li><a href="#" onclick="fetchBooksByCategory(5)">History</a></li>
+            <li><a href="#" onclick="fetchBooksByCategory(6)">Psychology</a></li>
+            <li><a href="#" onclick="fetchBooksByCategory(7)">Mystery/Thriller</a></li>
+            <li><a href="#" onclick="fetchBooksByCategory(8)">Novel/Fiction</a></li>
+            <li><a href="#" onclick="fetchBooksByCategory(9)">Modern Literature</a></li>
+            <li><a href="#" onclick="fetchBooksByCategory(10)">Read</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <div class="book-grid">
+            <div class="book-card">
+                <img src="pictures/1984.jpg" alt="Couldn't open the picture">
+                <p class="name">1984</p>
+                <p class="author">George Orwell</p>
+                <a href="book-detail.html?id=1" class="detail-btn">Details</a>
+            </div>
+
+
+            <div class="book-card">
+                <img src="pictures/call of the wild.jpg" alt="Couldn't open the picture">
+                <p class="name">Call of the Wild</p>
+                <p class="author">Jack London</p>
+                <a href="book-detail.html?id=6" class="detail-btn">Details</a>
+            </div>
+
+
+            <div class="book-card">
+                <img src="pictures/donusum.jpg" alt="Couldn't open the picture">
+                <p class="name">The Metamorphosis</p>
+                <p class="author">Franz Kafka</p>
+                <a href="book-detail.html?id=12" class="detail-btn">Details</a>
+            </div>
+
+
+            <div class="book-card">
+                <img src="pictures/sefiller.jpg" alt="Couldn't open the picture">
+                <p class="name">Les Miserables</p>
+                <p class="author">Victor Hugo</p>
+                <a href="book-detail.html?id=8" class="detail-btn">Details</a>
+            </div>
+ 
+
+            <div class="book-card">
+                <img src="pictures/animal farm.jpg" alt="Couldn't open the picture">
+                <p class="name">Animal Farm</p>
+                <p class="author">George Orwell</p>
+                <a href="book-detail.html?id=2" class="detail-btn">Details</a>
+            </div>
+
+
+            <div class="book-card">
+                <img src="pictures/the portrait of dorian gray.jpg" alt="Couldn't open the picture">
+                <p class="name">The Picture of Dorian Gray</p>
+                <p class="author">Oscar Wilde</p>
+                <a href="book-detail.html?id=3" class="detail-btn">Details</a>
+            </div>
+
+
+            <div class="book-card">
+                <img src="pictures/of mice and men.jpg" alt="Couldn't open the picture">
+                <p class="name">Of Mice and Men</p>
+                <p class="author">John Steinbeck</p>
+                <a href="book-detail.html?id=4" class="detail-btn">Details</a>
+            </div>
+
+
+            <div class="book-card">
+                <img src="pictures/white fang.jpg" alt="Couldn't open the picture">
+                <p class="name">White Fang</p>
+                <p class="author">Jack London</p>
+                <a href="book-detail.html?id=5" class="detail-btn">Details</a>
+            </div>
+
+
+            <div class="book-card">
+                <img src="pictures/the catcher in the rye.jpg" alt="Couldn't open the picture">
+                <p class="name">The Catcher in the Rye</p>
+                <p class="author">J.D.Salinger</p>
+                <a href="book-detail.html?id=7" class="detail-btn">Details</a>
+            </div>
+
+
+            <div class="book-card">
+                <img src="pictures/frankenstein.jpg" alt="Couldn't open the picture">
+                <p class="name">Frankenstein</p>
+                <p class="author">Mary Shalley</p>
+                <a href="book-detail.html?id=9" class="detail-btn">Details</a>
+            </div>
+
+
+            <div class="book-card">
+                <img src="pictures/a half life.jpg" alt="Couldn't open the picture">
+                <p class="name">A Half Life</p>
+                <p class="author">V.S.Naipaul</p>
+                <a href="book-detail.html?id=10" class="detail-btn">Details</a>
+            </div>
+
+
+            <div class="book-card">
+                <img src="pictures/alchemist.jpg" alt="Couldn't open the picture">
+                <p class="name">The Alchemist</p>
+                <p class="author">Paulo Coelho</p>
+                <a href="book-detail.html?id=11" class="detail-btn">Details</a>
+            </div>
+
+            <div class="book-card">
+                <img src="pictures/chess.jpg" alt="Couldn't open the picture">
+                <p class="name">Chess</p>
+                <p class="author">Stefan Zweig</p>
+                <a href="book-detail.html?id=13" class="detail-btn">Details</a> 
+            </div>
+            <div class="book-card">
+                <img src="pictures/to kill a mockingbird.jpg" alt="Couldn't open the picture">
+                <p class="name">To Kill a Mockingbird</p>
+                <p class="author">Harper Lee</p>
+                <a href="book-detail.html?id=14" class="detail-btn">Details</a>
+            </div>
+            <div class="book-card">
+                <img src="pictures/the great gatsby.jpg" alt="Couldn't open the picture">
+                <p class="name">The Great Gatsby</p>
+                <p class="author">F. Scott Fitzgerald</p>
+                <a href="book-detail.html?id=15" class="detail-btn">Details</a>
+            </div>
+            <div class="book-card">
+                <img src="pictures/crime and punishment.jpg" alt="Couldn't open the picture">
+                <p class="name">Crime and Punishment</p>
+                <p class="author">Fyodor Dostoevsky</p>
+                <a href="book-detail.html?id=16" class="detail-btn">Details</a>
+            </div>
+            <div class="book-card">
+                <img src="pictures/pride and prejudice.jpg" alt="Couldn't open the picture">
+                <p class="name">Pride and Prejudice</p>
+                <p class="author">Jane Austen</p>
+                <a href="book-detail.html?id=17" class="detail-btn">Details</a>
+            </div>
+            <div class="book-card">
+                <img src="pictures/brave new world.jpg" alt="Couldn't open the picture">
+                <p class="name">Brave New World</p>
+                <p class="author">Aldous Huxley</p>
+                <a href="book-detail.html?id=18" class="detail-btn">Details</a>
+            </div>
+            <div class="book-card">
+                <img src="pictures/fahrenheit 451.jpg" alt="Couldn't open the picture">
+                <p class="name">Fahrenheit 451</p>
+                <p class="author">Ray Bradbury</p>
+                <a href="book-detail.html?id=19" class="detail-btn">Details</a>
+            </div>
+            <div class="book-card">
+                <img src="pictures/dune.jpg" alt="Couldn't open the picture">
+                <p class="name">Dune</p>
+                <p class="author">Frank Herbert</p>
+                <a href="book-detail.html?id=20" class="detail-btn">Details</a>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: 20px; color: #777; font-size: 0.9rem; margin-top: 40px;">
+        <p>&copy; 2026 <strong>Paper & Pixel</strong>. Crafted with passion for books and code.</p>
+    </footer>
+
+    <script src="detail.js"></script>
+</body>
+</html>

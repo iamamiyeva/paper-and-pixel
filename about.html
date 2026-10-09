@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Paper & Pixel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Sol üst geri dönüş butonu alanı */
+        .top-navigation {
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #2C2C2F;
+            color: #ffffff;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .back-home-btn:hover {
+            background-color: #E5A93C;
+            color: #2C2C2F;
+            transform: translateY(-2px);
+        }
+
+        /* İçerik Kutusu Stilleri */
+        .about-container {
+            max-width: 850px;
+            margin: 10px auto 50px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #E8E0D8;
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .about-header h1 {
+            font-size: 2.4rem;
+            color: #2C2C2F;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .about-header p {
+            font-size: 1.1rem;
+            color: #E5A93C;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .about-section {
+            margin-bottom: 30px;
+        }
+
+        .about-section h2 {
+            font-size: 1.4rem;
+            color: #2C2C2F;
+            border-bottom: 2px solid #F0E8D0;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .about-section p {
+            line-height: 1.8;
+            color: #4A4A4A;
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+
+        .future-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .future-list li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            line-height: 1.6;
+            color: #4A4A4A;
+        }
+
+        .future-list li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: #E5A93C;
+            font-size: 1.2rem;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tag {
+            background-color: #F8F5EC;
+            color: #2C2C2F;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            border: 1px solid #E8E0D8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sol Üst Geri Dönüş Butonu -->
+    <div class="top-navigation">
+        <a href="index.html" class="back-home-btn">
+            <span class="material-icons">arrow_back</span> Back to Home
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <main style="margin-left: 0; padding-top: 0;">
+        <div class="about-container">
+            
+            <div class="about-header">
+                <h1>Paper & Pixel</h1>
+                <p>"Where timeless literature meets modern software architecture."</p>
+            </div>
+
+            <div class="about-section">
+                <h2><span class="material-icons" style="color:#E5A93C;">auto_stories</span> Driven by Literature Passion</h2>
+                <p>
+                    <strong>Paper & Pixel</strong> is far more than a simple book index or a static digital catalog. It was born out of a profound passion for literature—ranging from immortal classics and philosophical deep dives to contemporary narratives. As a devoted literature enthusiast, my vision was to build an aesthetic digital sanctuary where readers can explore not just book titles, but the very essence, history, and soul behind every masterpiece.
+                </p>
+            </div>
+
+            <div class="about-section">
+                <h2><span class="material-icons" style="color:#E5A93C;">code</span> Technical Architecture & Purpose</h2>
+                <p>
+                    This project was crafted to bridge literary aesthetics with modern software development. To ensure a seamless, dynamic, and reliable reader experience, the backend is built with the <strong>Python Flask</strong> micro-framework integrated with <strong>MS SQL Server</strong> for database management. The frontend is engineered using clean JavaScript and modular CSS design.
+                </p>
+                
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Flask API</span>
+                    <span class="tag">MS SQL Server</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML5 & CSS</span>
+                    <span class="tag">Responsive UI</span>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h2><span class="material-icons" style="color:#E5A93C;">rocket_launch</span> Roadmap & Upcoming Features (v2.0)</h2>
+                <p>Paper & Pixel is an evolving platform. Features coming in the next release include:</p>
+                
+                <ul class="future-list">
+                    <li><strong>Digital Reader & PDF Access:</strong> Direct preview and downloadable PDF resources for public domain classics.</li>
+                    <li><strong>Advanced Category Filtering:</strong> Dynamic real-time sorting by genres, eras, and authors.</li>
+                    <li><strong>User Reviews & Ratings:</strong> An interactive community hub for readers to share critiques and ratings.</li>
+                    <li><strong>Personal Reading Lists:</strong> Features to bookmark "Favorites" and build a custom "Want to Read" shelf.</li>
+                    <li><strong>Literary Quotes Corner:</strong> Daily inspirational excerpts and quotes from master authors worldwide.</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
