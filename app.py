@@ -10,6 +10,10 @@ def get_db_connection():
     conn.row_factory = sqlite3.Row
     return conn
 
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({"message": "Paper and Pixel API is running successfully!"})
+
 ##  FOR ALL BOOKS AND FILTERS ON HOME PAGE (JUST THEIR CARDS' DETAILS)
 
 @app.route('/api/books', methods=['GET'])
